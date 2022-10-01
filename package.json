@@ -1,0 +1,95 @@
+{
+  "name": "@andideve/design-system",
+  "version": "0.1.0",
+  "description": "",
+  "homepage": "https://github.com/andideve/design-system",
+  "bugs": "https://github.com/andideve/design-system/issues",
+  "license": "MIT",
+  "author": "Andi <andideve0@gmail.com>",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andideve/design-system.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "storybook": "start-storybook -p 3000 -s public",
+    "build-storybook": "build-storybook -s public"
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^6.5.12",
+    "@storybook/addon-essentials": "^6.5.12",
+    "@storybook/addon-interactions": "^6.5.12",
+    "@storybook/addon-links": "^6.5.12",
+    "@storybook/builder-webpack5": "^6.5.12",
+    "@storybook/manager-webpack5": "^6.5.12",
+    "@storybook/node-logger": "^6.5.12",
+    "@storybook/preset-create-react-app": "^4.1.2",
+    "@storybook/react": "^6.5.12",
+    "@storybook/testing-library": "^0.0.13",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.11.62",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "babel-plugin-named-exports-order": "^0.0.2",
+    "prop-types": "^15.8.1",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.8.4",
+    "web-vitals": "^2.1.4",
+    "webpack": "^5.74.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@andideve/ds-badge": "^0.1.0",
+    "@andideve/ds-box": "^0.1.0",
+    "@andideve/ds-button": "^0.1.0",
+    "@andideve/ds-core": "^0.1.0",
+    "@andideve/ds-input": "^0.1.0",
+    "@andideve/ds-table": "^0.1.0",
+    "@andideve/ds-typography": "^0.1.0",
+    "@andideve/styled-system": "^0.1.2"
+  }
+}
